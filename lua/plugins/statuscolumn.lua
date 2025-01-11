@@ -32,8 +32,15 @@ return {
       require("statuscol").setup({
         relculright = true,
         segments = {
+          {
+            sign = { name = { "Diagnostic" }, maxwidth = 2, auto = true },
+            click = "v:lua.ScSa",
+          },
           { text = { builtin.lnumfunc }, click = "v:lua.ScLa" },
-          { text = { "┃ " }, condition = { builtin.not_empty } },
+          {
+            sign = { namespace = { "gitsigns" }, name = { ".*" }, maxwidth = 2, colwidth = 1, auto = true },
+            click = "v:lua.ScSa",
+          },
         },
       })
     end,
