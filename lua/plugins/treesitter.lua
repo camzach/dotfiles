@@ -5,15 +5,17 @@ return {
     dependencies = {
       { "windwp/nvim-autopairs", config = true },
       { "windwp/nvim-ts-autotag", config = true },
+      { "nvim-treesitter/nvim-treesitter-textobjects" },
     },
-    opts = {
-      ensure_installed = "all",
-    },
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
     config = function()
-      require("nvim-treesitter.configs").setup({
+      local configs = require("nvim-treesitter.configs")
+      configs.setup({
+        ensure_installed = "all",
+        highlight = { enable = true },
+        indent = { enable = true },
+        incremental_selection = { enable = true },
+        folding = { enable = true },
+        autotag = { enable = true },
         textobjects = {
           select = {
             enable = true,

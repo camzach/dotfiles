@@ -41,6 +41,7 @@ return {
             sign = { namespace = { "gitsigns" }, name = { ".*" }, maxwidth = 2, colwidth = 1, auto = true },
             click = "v:lua.ScSa",
           },
+          { text = { " " } },
         },
       })
     end,
