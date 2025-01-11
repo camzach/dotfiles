@@ -11,11 +11,19 @@ return {
 
     mason.setup()
     mason_lspconfig.setup({
-      ensure_installed = { "ts_ls", "lua_ls" }
+      ensure_installed = { "ts_ls", "lua_ls", "emmet_ls" },
     })
 
     lspconfig.ts_ls.setup({})
     lspconfig.lua_ls.setup({})
-
+    lspconfig.emmet_language_server.setup({
+      filetypes = {
+        "html",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+      },
+    })
   end,
 }
