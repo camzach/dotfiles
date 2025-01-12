@@ -11,11 +11,12 @@ return {
 
     mason.setup()
     mason_lspconfig.setup({
-      ensure_installed = { "ts_ls", "lua_ls", "emmet_ls" },
+      ensure_installed = { "ts_ls", "lua_ls", "emmet_ls", "eslint" },
     })
 
     lspconfig.ts_ls.setup({})
     lspconfig.lua_ls.setup({})
     lspconfig.emmet_ls.setup({})
+    lspconfig.eslint.setup({})
   end,
 }
