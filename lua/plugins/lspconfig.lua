@@ -16,14 +16,6 @@ return {
 
     lspconfig.ts_ls.setup({})
     lspconfig.lua_ls.setup({})
-    lspconfig.emmet_language_server.setup({
-      filetypes = {
-        "html",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-      },
-    })
+    lspconfig.emmet_ls.setup({})
   end,
 }

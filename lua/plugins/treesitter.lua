@@ -15,7 +15,6 @@ return {
         indent = { enable = true },
         incremental_selection = { enable = true },
         folding = { enable = true },
-        autotag = { enable = true },
         textobjects = {
           select = {
             enable = true,
