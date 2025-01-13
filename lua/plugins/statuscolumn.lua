@@ -28,12 +28,13 @@ return {
     config = function()
       vim.o.number = true
       vim.o.relativenumber = true
+      vim.o.signcolumn = "yes"
       local builtin = require("statuscol.builtin")
       require("statuscol").setup({
         relculright = true,
         segments = {
           {
-            sign = { name = { "Diagnostic" }, maxwidth = 2, auto = true },
+            sign = { namespace = { "diagnostic/signs" }, maxwidth = 2, auto = true },
             click = "v:lua.ScSa",
           },
           { text = { builtin.lnumfunc }, click = "v:lua.ScLa" },

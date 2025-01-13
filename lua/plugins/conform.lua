@@ -15,6 +15,7 @@ return {
       less = { "prettier" },
       http = { "prettier" },
       lua = { "stylua" },
+      rust = { "rustfmt" },
     },
     format_on_save = function(bufnr)
       print("Formatting")
