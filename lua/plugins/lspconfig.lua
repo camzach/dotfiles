@@ -11,12 +11,12 @@ return {
 
     mason.setup()
     mason_lspconfig.setup({
-      ensure_installed = { "ts_ls", "lua_ls", "emmet_ls", "eslint", "rust_analyzer" },
+      ensure_installed = { "ts_ls", "lua_ls", "emmet_language_server", "eslint", "rust_analyzer" },
     })
 
     lspconfig.ts_ls.setup({})
     lspconfig.lua_ls.setup({})
-    lspconfig.emmet_ls.setup({})
+    lspconfig.emmet_language_server.setup({})
     lspconfig.eslint.setup({})
     lspconfig.rust_analyzer.setup({})
 
@@ -41,6 +41,13 @@ return {
         },
         prefix = "",
         suffix = "",
+      },
+      virtual_text = true,
+      update_in_insert = true,
+    })
+
+    vim.diagnostic.config({
+      float = {
         format = function(diagnostic)
           if diagnostic.source == "rustc" and diagnostic.user_data.lsp.data ~= nil then
             return diagnostic.user_data.lsp.data.rendered
@@ -49,8 +56,6 @@ return {
           end
         end,
       },
-      virtual_text = false,
-      update_in_insert = true,
     })
   end,
 }
