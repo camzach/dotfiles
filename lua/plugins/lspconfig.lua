@@ -11,14 +11,17 @@ return {
 
     mason.setup()
     mason_lspconfig.setup({
-      ensure_installed = { "ts_ls", "lua_ls", "emmet_language_server", "eslint", "rust_analyzer" },
+      ensure_installed = { "ts_ls", "lua_ls", "emmet_language_server", "eslint", "rust_analyzer", "jsonls" },
     })
 
-    lspconfig.ts_ls.setup({})
-    lspconfig.lua_ls.setup({})
-    lspconfig.emmet_language_server.setup({})
-    lspconfig.eslint.setup({})
-    lspconfig.rust_analyzer.setup({})
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
+    local opts = { capabilities = capabilities }
+    lspconfig.ts_ls.setup(opts)
+    lspconfig.lua_ls.setup(opts)
+    lspconfig.emmet_language_server.setup(opts)
+    lspconfig.eslint.setup(opts)
+    lspconfig.rust_analyzer.setup(opts)
+    lspconfig.jsonls.setup(opts)
 
     vim.diagnostic.config({
       signs = {

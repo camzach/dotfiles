@@ -14,6 +14,7 @@ return {
       yaml = { "prettier" },
       less = { "prettier" },
       http = { "prettier" },
+      json = { "prettier" },
       lua = { "stylua" },
       rust = { "rustfmt" },
     },
