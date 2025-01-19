@@ -16,12 +16,12 @@ return {
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local opts = { capabilities = capabilities }
-    lspconfig.ts_ls.setup(opts)
-    lspconfig.lua_ls.setup(opts)
-    lspconfig.emmet_language_server.setup(opts)
-    lspconfig.eslint.setup(opts)
-    lspconfig.rust_analyzer.setup(opts)
-    lspconfig.jsonls.setup(opts)
+    lspconfig.ts_ls.setup({})
+    lspconfig.lua_ls.setup({})
+    lspconfig.emmet_language_server.setup({})
+    lspconfig.eslint.setup({})
+    lspconfig.rust_analyzer.setup({})
+    lspconfig.jsonls.setup({})
 
     vim.diagnostic.config({
       signs = {
