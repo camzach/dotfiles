@@ -17,6 +17,7 @@ return {
       json = { "prettier" },
       lua = { "stylua" },
       rust = { "rustfmt" },
+      go = { "gofmt" },
     },
     format_on_save = function(bufnr)
       print("Formatting")
