@@ -4,7 +4,12 @@ return {
     build = ":TSUpdate",
     dependencies = {
       { "windwp/nvim-autopairs", config = true },
-      { "windwp/nvim-ts-autotag", config = true },
+      {
+        "windwp/nvim-ts-autotag",
+        config = {
+          opts = { enable_close_on_slash = true },
+        },
+      },
       { "nvim-treesitter/nvim-treesitter-textobjects" },
     },
     config = function()
