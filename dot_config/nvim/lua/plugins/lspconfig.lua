@@ -19,20 +19,22 @@ return {
         "jsonls",
         "lua_ls",
         "rust_analyzer",
+        "taplo",
         "ts_ls",
       },
     })
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local opts = { capabilities = capabilities }
-    lspconfig.ts_ls.setup({})
-    lspconfig.lua_ls.setup({})
+    lspconfig.bashls.setup({ filetypes = { "sh", "bash", "zsh" } })
     lspconfig.emmet_language_server.setup({})
     lspconfig.eslint.setup({})
-    lspconfig.rust_analyzer.setup({})
-    lspconfig.jsonls.setup({})
     lspconfig.gopls.setup({})
-    lspconfig.bashls.setup({ filetypes = { "sh", "bash", "zsh" } })
+    lspconfig.jsonls.setup({})
+    lspconfig.lua_ls.setup({})
+    lspconfig.rust_analyzer.setup({})
+    lspconfig.taplo.setup({})
+    lspconfig.ts_ls.setup({})
 
     vim.diagnostic.config({
       signs = {
