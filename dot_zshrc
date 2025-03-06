@@ -1,7 +1,4 @@
-if [[ $(command -v fortune) && $(command -v cowsay) ]]; then
-	fortune | cowsay
-fi
-
+# Setup nvim as editor, using vim as fallback
 if [ "$(which nvim)" ]; then
 	export EDITOR="nvim"
 	export VISUAL="nvim"
@@ -11,10 +8,22 @@ elif [ "$(which vim)" ]; then
 fi
 bindkey -e
 
+# Setup NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
+# Set up starship prompt
 if [ "$(which starship)" ]; then
 	eval "$(starship init zsh)"
+fi
+
+# Add cargo to path
+if [ -d "$HOME/.cargo" ]; then
+	export PATH=$PATH:~/.cargo/bin
+fi
+
+# Funny cow :)
+if [[ $(command -v fortune) && $(command -v cowsay) ]]; then
+	fortune | cowsay
 fi
