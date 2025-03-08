@@ -89,7 +89,9 @@ end)
 -- Keybindings
 config.keys = {
 	{ key = "v", mods = "CTRL", action = wezterm.action({ PasteFrom = "Clipboard" }) },
-	{ key = "l", mods = "ALT",  action = wezterm.action.ShowLauncher },
+	{ key = "LeftArrow", mods = "CTRL", action = wezterm.action.SendKey({ mods = "ALT", key = "b" }) },
+	{ key = "RightArrow", mods = "CTRL", action = wezterm.action.SendKey({ mods = "ALT", key = "f" }) },
+	{ key = "l", mods = "ALT", action = wezterm.action.ShowLauncher },
 }
 
 -- OS-Specific Overrides
@@ -101,14 +103,13 @@ if host_os == "linux" then
 	config.window_decorations = nil -- use system decorations
 end
 
-
 if host_os == "windows" then
 	local wsl_domains = wezterm.default_wsl_domains()
 	for _, dom in ipairs(wsl_domains) do
 		dom.default_cwd = "~"
 	end
-	config.wsl_domains = wsl_domains;
-	config.default_domain = "WSL:Ubuntu";
+	config.wsl_domains = wsl_domains
+	config.default_domain = "WSL:Ubuntu"
 	config.default_prog = { "wsl.exe" }
 end
 
