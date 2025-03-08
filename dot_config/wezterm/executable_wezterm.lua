@@ -95,14 +95,6 @@ config.keys = {
 }
 
 -- OS-Specific Overrides
-if host_os == "linux" then
-	emoji_font = "Noto Color Emoji"
-	config.default_prog = { "zsh" }
-	config.front_end = "WebGpu"
-	config.window_background_image = os.getenv("HOME") .. "/.config/wezterm/bg-blurred.png"
-	config.window_decorations = nil -- use system decorations
-end
-
 if host_os == "windows" then
 	local wsl_domains = wezterm.default_wsl_domains()
 	for _, dom in ipairs(wsl_domains) do
@@ -110,7 +102,6 @@ if host_os == "windows" then
 	end
 	config.wsl_domains = wsl_domains
 	config.default_domain = "WSL:Ubuntu"
-	config.default_prog = { "wsl.exe" }
 end
 
 return config
