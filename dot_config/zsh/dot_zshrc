@@ -7,10 +7,10 @@ setopt HIST_REDUCE_BLANKS
 source "$ZDOTDIR/completion.zsh"
 
 # Setup nvim as editor, using vim as fallback
-if [ "$(which nvim)" ]; then
+if [[ "$(command -v nvim)" ]]; then
 	export EDITOR="nvim"
 	export VISUAL="nvim"
-elif [ "$(which vim)" ]; then
+elif [[ "$(command -v vim)" ]]; then
 	export EDITOR="vim"
 	export VISUAL="vim"
 fi
@@ -21,7 +21,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Set up starship prompt
-if [ "$(which starship)" ]; then
+if [[ "$(command -v starship)" ]]; then
 	eval "$(starship init zsh)"
 fi
 
