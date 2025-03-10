@@ -1,5 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export PATH="$PATH:~/.cargo/bin"
+
 # Initialize homebrew for macOS
 if [[ -f /opt/homebrew/bin/brew ]]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -19,8 +19,3 @@ fi
 if [[ "$(command -v starship)" ]]; then
 	eval "$(starship init zsh)"
 fi
-
-# Add cargo to path
-if [ -d "$HOME/.cargo" ]; then
-	export PATH=$PATH:~/.cargo/bin
-fi
