@@ -1,3 +1,7 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+# Initialize fnm
+if [[ $(command -v fnm) ]]; then
+	eval $(fnm env)
+fi
