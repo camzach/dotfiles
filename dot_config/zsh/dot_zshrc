@@ -1,3 +1,11 @@
+export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
+export HISTSIZE=10000                   # Maximum events for internal history
+export SAVEHIST=10000                   # Maximum events in history filepath
+setopt HIST_IGNORE_DUPS
+setopt HIST_REDUCE_BLANKS
+
+source "$ZDOTDIR/completion.zsh"
+
 # Setup nvim as editor, using vim as fallback
 if [ "$(which nvim)" ]; then
 	export EDITOR="nvim"
@@ -6,7 +14,6 @@ elif [ "$(which vim)" ]; then
 	export EDITOR="vim"
 	export VISUAL="vim"
 fi
-bindkey -e
 
 # Setup NVM
 export NVM_DIR="$HOME/.nvm"
@@ -21,9 +28,4 @@ fi
 # Add cargo to path
 if [ -d "$HOME/.cargo" ]; then
 	export PATH=$PATH:~/.cargo/bin
-fi
-
-# Funny cow :)
-if [[ $(command -v fortune) && $(command -v cowsay) ]]; then
-	fortune | cowsay
 fi
