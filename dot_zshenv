@@ -10,6 +10,6 @@ fi
 # fnm
 FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/cameron/.local/share/fnm:$PATH"
-  eval "`fnm env`"
+	export PATH="/home/cameron/.local/share/fnm:$PATH"
+	eval "$(fnm env)"
 fi

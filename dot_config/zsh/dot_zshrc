@@ -1,6 +1,6 @@
-export HISTFILE="$ZDOTDIR/.zhistory"    # History filepath
-export HISTSIZE=10000                   # Maximum events for internal history
-export SAVEHIST=10000                   # Maximum events in history filepath
+export HISTFILE="$ZDOTDIR/.zhistory" # History filepath
+export HISTSIZE=10000                # Maximum events for internal history
+export SAVEHIST=10000                # Maximum events in history filepath
 setopt HIST_IGNORE_DUPS
 setopt HIST_REDUCE_BLANKS
 
