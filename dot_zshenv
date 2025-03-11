@@ -1,13 +1,15 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-export PATH="$PATH:~/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # Initialize homebrew for macOS
 if [[ -f /opt/homebrew/bin/brew ]]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Initialize fnm
-if [[ $(command -v fnm) ]]; then
-	eval $(fnm env)
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/cameron/.local/share/fnm:$PATH"
+  eval "`fnm env`"
 fi
