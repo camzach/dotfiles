@@ -13,3 +13,9 @@ if [ -d "$FNM_PATH" ]; then
 	export PATH="/home/cameron/.local/share/fnm:$PATH"
 	eval "$(fnm env)"
 fi
+
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+	*":$PNPM_HOME:"*) ;;
+	*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
