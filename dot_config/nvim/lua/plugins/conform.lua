@@ -23,8 +23,8 @@ return {
     },
     formatters = {
       shfmt = {
-        extra_args = { "-i", "2", "-ci", "-bn" }
-      }
+        args = { "-ci", "-bn" },
+      },
     },
     format_on_save = function(bufnr)
       print("Formatting")
