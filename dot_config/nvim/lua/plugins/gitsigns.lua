@@ -34,15 +34,32 @@ return {
         vim.keymap.set("n", "<leader>hb", function()
           gitsigns.blame_line({ full = true })
         end, { desc = "Blame line" })
+        vim.keymap.set("n", "<leader>hB", gitsigns.blame, { desc = "Blame buffer" })
 
         vim.keymap.set("n", "<leader>hd", gitsigns.diffthis, { desc = "Show diff" })
-
         vim.keymap.set("n", "<leader>hD", function()
           gitsigns.diffthis("~")
-        end, { desc = "Show diff but more different" })
+        end, { desc = "Show diff for buffer" })
 
         -- Text object
         vim.keymap.set({ "o", "x" }, "ah", gitsigns.select_hunk, { desc = "Git hunk" })
+
+        -- Navigation
+        vim.keymap.set("n", "]h", function()
+          if vim.wo.diff then
+            vim.cmd.normal({ "]h", bang = true })
+          else
+            gitsigns.nav_hunk("next")
+          end
+        end, { desc = "Next hunk" })
+
+        vim.keymap.set("n", "[h", function()
+          if vim.wo.diff then
+            vim.cmd.normal({ "[h", bang = true })
+          else
+            gitsigns.nav_hunk("prev")
+          end
+        end, { desc = "Previous hunk" })
       end,
     })
   end,
