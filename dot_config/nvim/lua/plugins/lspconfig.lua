@@ -19,6 +19,7 @@ return {
         "jsonls",
         "lua_ls",
         "rust_analyzer",
+        "tailwindcss",
         "taplo",
         "ts_ls",
       },
@@ -33,6 +34,7 @@ return {
     lspconfig.jsonls.setup({})
     lspconfig.lua_ls.setup({})
     lspconfig.rust_analyzer.setup({})
+    lspconfig.tailwindcss.setup({})
     lspconfig.taplo.setup({})
     lspconfig.ts_ls.setup({})
 
