@@ -89,11 +89,9 @@ end)
 -- Keybindings
 config.keys = {
 	{ key = "v", mods = "CTRL", action = wezterm.action({ PasteFrom = "Clipboard" }) },
-	{ key = "LeftArrow", mods = "CTRL", action = wezterm.action.SendKey({ mods = "ALT", key = "b" }) },
-	{ key = "RightArrow", mods = "CTRL", action = wezterm.action.SendKey({ mods = "ALT", key = "f" }) },
 	{ key = "l", mods = "ALT", action = wezterm.action.ShowLauncher },
-	{ key = "9", mods = "CTRL", action = wezterm.action.PaneSelect },
-	{ key = "0", mods = "CTRL", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
+	{ key = "j", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect },
+	{ key = "s", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
 }
 
 -- OS-Specific Overrides
