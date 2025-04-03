@@ -11,7 +11,7 @@ fi
 FNM_PATH="$HOME/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
 	export PATH="/home/cameron/.local/share/fnm:$PATH"
-	eval "$(fnm env)"
+	eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
