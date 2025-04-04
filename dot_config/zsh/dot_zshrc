@@ -19,3 +19,7 @@ fi
 if [[ "$(command -v starship)" ]]; then
 	eval "$(starship init zsh)"
 fi
+
+if [[ "$(command -v zoxide)" ]]; then
+	eval "$(zoxide init zsh --cmd cd)"
+fi
