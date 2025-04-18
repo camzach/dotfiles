@@ -6,6 +6,10 @@ setopt HIST_REDUCE_BLANKS
 
 source "$ZDOTDIR/completion.zsh"
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey ^N edit-command-line
+
 # Setup nvim as editor, using vim as fallback
 if [[ "$(command -v nvim)" ]]; then
 	export EDITOR="nvim"
