@@ -88,7 +88,6 @@ end)
 
 -- Keybindings
 config.keys = {
-	{ key = "v", mods = "CTRL", action = wezterm.action({ PasteFrom = "Clipboard" }) },
 	{ key = "l", mods = "ALT", action = wezterm.action.ShowLauncher },
 	{ key = "j", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect },
 	{ key = "s", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
