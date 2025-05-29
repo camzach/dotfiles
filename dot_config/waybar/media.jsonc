@@ -1,0 +1,16 @@
+{
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/spotify"
+    ]
+  },
+  "custom/spotify": {
+    "exec": "/usr/bin/python3 $XDG_CONFIG_HOME/waybar/mediaplayer.py --player spotify",
+    "format": "{}   ",
+    "return-type": "json",
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+  }
+}

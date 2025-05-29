@@ -1,0 +1,35 @@
+{
+  "network#signal": {
+    "format": "{ifname} {signalStrength}",
+    "format-wifi": "  {signalStrength}% ",
+    "format-ethernet": "  ",
+    "format-disconnected": "Not connected",
+    "tooltip-format": "  {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "nm-connection-editor"
+  },
+  "network#bandwidth": {
+    "format": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-wifi": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} ",
+    "format-disconnected": "",
+    "tooltip-format": "",
+    "tooltip-format-wifi": "",
+    "tooltip-format-ethernet": "",
+    "tooltip-format-disconnected": "",
+    "interval": 1
+  },
+  "group/network": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "network#signal",
+      "network#bandwidth"
+    ]
+  }
+}
