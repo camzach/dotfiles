@@ -3,6 +3,7 @@
 format = """
 [](color_orange)\
 $os\
+${custom.shell_level}\
 $username\
 [](bg:color_yellow fg:color_orange)\
 $directory\
@@ -172,3 +173,16 @@ vimcmd_symbol = '[](bold fg:color_green)'
 vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
 vimcmd_replace_symbol = '[](bold fg:color_purple)'
 vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+
+[custom.shell_level]
+command = '''
+# Starship executes in a subshell, so bounds need to be adjusted by 1
+if [ "$SHLVL" -gt 3 ]; then
+	echo "*($((SHLVL - 1)))"
+else
+	echo "*"
+fi
+'''
+when = '[ "$SHLVL" -gt 2 ]'
+style = "bg:color_orange fg:color_fg0"
+format = "[ $output]($style)"
