@@ -22,13 +22,13 @@ end
 local host_os = get_os()
 
 -- Font Configuration
-local emoji_font = "Segoe UI Emoji"
+local emoji_font = "Noto Color Emoji"
 config.font = wezterm.font_with_fallback({
 	{
 		family = "JetBrainsMono Nerd Font",
 		weight = "Regular",
 	},
-	emoji_font,
+	emoji_font
 })
 config.font_size = 10
 
@@ -88,10 +88,16 @@ end)
 
 -- Keybindings
 config.keys = {
-	{ key = "l", mods = "ALT", action = wezterm.action.ShowLauncher },
+	{ key = "l", mods = "ALT",            action = wezterm.action.ShowLauncher },
 	{ key = "j", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect },
 	{ key = "s", mods = "CTRL|ALT|SHIFT", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
 }
+
+if os.getenv("XDG_CURRENT_DESKTOP") == "Hyprland" then
+	config.enable_wayland = false
+else
+	config.enable_wayland = true
+end
 
 -- OS-Specific Overrides
 if host_os == "windows" then
