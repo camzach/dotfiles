@@ -48,6 +48,9 @@ button.active {
 
 tooltip {
   opacity: 1;
+  background-color: @surface;
+  border: 3px solid @shadow;
+  border-radius: 5%;
 }
 
 window#waybar.empty #window {
