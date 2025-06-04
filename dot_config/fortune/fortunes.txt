@@ -1,0 +1,1090 @@
+In mathematics, you don't understand things.
+You just get used to them.
+
+-- John von Neumann
+%
+The only way to learn a new programming language
+is by writing programs in it.
+
+-- Dennis Ritchie
+%
+Mathematics is the art of giving the same name
+to different things.
+
+-- Henri Poincaré
+%
+Debugging is twice as hard as writing the code
+in the first place.
+
+-- Brian Kernighan
+%
+Pure mathematics is, in its way, the poetry of
+logical ideas.
+
+-- Albert Einstein
+%
+Any fool can write code that a computer can
+understand. Good programmers write code that
+humans can understand.
+
+-- Martin Fowler
+%
+Premature optimization is the root of all
+evil.
+
+-- Donald Knuth
+%
+The whole is greater than the sum of its
+parts.
+
+-- Aristotle
+%
+Mathematics is the language with which God has
+written the universe.
+
+-- Galileo Galilei
+%
+First, solve the problem. Then, write the
+code.
+
+-- John Johnson
+%
+An idiot admires complexity, a genius admires
+simplicity.
+
+-- Terry Davis
+%
+If debugging is the process of removing software
+bugs, then programming must be the process of
+putting them in.
+
+-- Edsger Dijkstra
+%
+Mathematics is the music of reason.
+
+-- James Joseph Sylvester
+%
+There are two ways of constructing a software
+design: One way is to make it so simple that
+there are obviously no deficiencies, and the
+other way is to make it so complicated that
+there are no obvious deficiencies.
+
+-- Tony Hoare
+%
+Programming is not a science. Programming is
+a craft.
+
+-- Richard Stallman
+%
+Mathematics compares the most diverse phenomena
+and discovers the secret analogies that unite
+them.
+
+-- Joseph Fourier
+%
+Code is read much more often than it is
+written.
+
+-- Guido van Rossum
+%
+The best programs are written so that computing
+machines can perform them quickly and so that
+human beings can understand them clearly.
+
+-- Donald Knuth
+%
+Mathematics, you see, is not a spectator
+sport.
+
+-- George Pólya
+%
+The most important property of a program is
+whether it accomplishes the intention of its
+user.
+
+-- Tony Hoare
+%
+The purpose of computing is insight, not
+numbers.
+
+-- Richard Hamming
+%
+Programming is thinking, not typing.
+
+-- Casey Patton
+%
+Measuring programming progress by lines of code
+is like measuring aircraft building progress
+by weight.
+
+-- Bill Gates
+%
+Mathematics is the gate and key of all
+sciences.
+
+-- Roger Bacon
+%
+Talk is cheap. Show me the code.
+
+-- Linus Torvalds
+%
+The best way to predict the future is to invent
+it.
+
+-- Alan Kay
+%
+In mathematics, the art of proposing a question
+must be held of higher value than solving it.
+
+-- Georg Cantor
+%
+The most effective debugging tool is still
+careful thought, coupled with judiciously placed
+print statements.
+
+-- Brian Kernighan
+%
+Mathematical discoveries, like springtime
+violets in the woods, have their season which
+no human can hasten or retard.
+
+-- Janos Bolyai
+%
+The purpose of abstraction is not to be vague,
+but to create a new semantic level in which
+one can be absolutely precise.
+
+-- Edsger Dijkstra
+%
+Mathematics knows no races or geographic
+boundaries; for mathematics, the cultural world
+is one country.
+
+-- David Hilbert
+%
+Programs must be written for people to read,
+and only incidentally for machines to
+execute.
+
+-- Harold Abelson
+%
+God made the integers; all else is the work of
+man.
+
+-- Leopold Kronecker
+%
+There are only two kinds of languages: the ones
+people complain about and the ones nobody
+uses.
+
+-- Bjarne Stroustrup
+%
+Simplicity is prerequisite for reliability.
+
+-- Edsger Dijkstra
+%
+A mathematician, like a painter or a poet, is
+a maker of patterns. If his patterns are more
+permanent than theirs, it is because they are
+made with ideas
+
+-- G. H. Hardy
+%
+Without requirements or design, programming is
+the art of adding bugs to an empty text file.
+
+-- Louis Srygley
+%
+Mathematics is not about numbers, equations,
+computations or algorithms: it is about
+understanding.
+
+-- William Paul Thurston
+%
+As far as the laws of mathematics refer to
+reality, they are not certain, and as far as
+they are certain, they do not refer to
+reality.
+
+-- Albert Einstein
+%
+Walking on water and developing software from
+a specification are easy if both are frozen.
+
+-- Edward V. Berard
+%
+Computer science is no more about computers
+than astronomy is about telescopes.
+
+-- Edsger Dijkstra
+%
+Programming is the art of algorithm design and
+the craft of debugging errant code.
+
+-- Ellen Ullman
+%
+Weeks of coding can save you hours of
+planning.
+
+-- Unknown
+%
+Mathematics is the queen of sciences and number
+theory is the queen of mathematics.
+
+-- Carl Friedrich Gauss
+%
+Programming is learned by writing programs. In
+this, programming is similar to other endeav-
+ors with a practical component. You cannot
+learn to swim, to play a musical instrument,
+or to drive a car just from reading a book –
+you must practice.
+
+-- Bjarne Stroustrup
+%
+The function of good software is to make the
+complex appear to be simple.
+
+-- Grady Booch
+%
+The essence of mathematics is not to make simple
+things complicated, but to make complicated
+things simple.
+
+-- Stan Gudder
+%
+There are two ways to write error-free programs;
+only the third one works.
+
+-- Alan Perlis
+%
+The computer was born to solve problems that
+did not exist before.
+
+-- Bill Gates
+%
+Mathematics is the most beautiful and most
+powerful creation of the human spirit.
+
+-- Stefan Banach
+%
+Good software, like wine, takes time.
+
+-- Joel Spolsky
+%
+A mathematician is a device for turning coffee
+into theorems.
+
+-- Alfréd Rényi
+%
+Software and cathedrals are much the same —
+first we build them, then we pray.
+
+-- Sam Redwine
+%
+The study of mathematics, like the Nile, begins
+in minuteness but ends in magnificence.
+
+-- Charles Caleb Colton
+%
+The best error message is the one that never
+shows up.
+
+-- Thomas Fuchs
+%
+Coding is today's language of creativity.
+
+-- Maria Klawe
+%
+Mathematics reveals its secrets only to those
+who approach it with pure love, for its own
+beauty.
+
+-- Archimedes
+%
+Programs are meant to be read by humans and
+only incidentally for computers to execute.
+
+-- Harold Abelson, Structure and Interpretation of Computer Programs
+%
+There's nothing I believe in more strongly than
+getting young people interested in science and
+engineering, for a better tomorrow, for all
+humankind.
+
+-- Bill Nye
+%
+Mathematics is the science of what is clear by
+itself.
+
+-- Carl Jacobi
+%
+Mathematics is not a careful march down a
+well-cleared highway, but a journey into a
+strange wilderness, where the explorers often
+get lost.
+
+-- W. S. Anglin
+%
+Mathematics is the tool specially suited for
+dealing with abstract concepts of any kind and
+there is no limit to its power in this field.
+
+-- Paul Dirac
+%
+Any code of your own that you haven't looked
+at for six or more months might as well have
+been written by someone else.
+
+-- Eagleson's Law
+%
+Mathematics is the science which draws necessary
+conclusions.
+
+-- Benjamin Peirce
+%
+Code is like humor. When you have to explain
+it, it's bad.
+
+-- Cory House
+%
+Mathematics is the foundation of all exact
+knowledge of natural phenomena.
+
+-- David Hilbert
+%
+Mathematics is the handwriting on the human
+consciousness of the very Spirit of Life
+itself.
+
+-- Claude Bragdon
+%
+Code never lies, comments sometimes do.
+
+-- Ron Jeffries
+%
+Mathematics is the supreme judge; from its
+decisions there is no appeal.
+
+-- Tobias Dantzig
+%
+Mathematics, rightly viewed, possesses not only
+truth, but supreme beauty.
+
+-- Bertrand Russell
+%
+Mathematics is a game played according to
+certain simple rules with meaningless marks on
+paper.
+
+-- David Hilbert
+%
+Programming is not about typing, it's about
+thinking.
+
+-- Rich Hickey
+%
+Mathematics is the only science where one never
+knows what one is talking about nor whether
+what is said is true.
+
+-- Bertrand Russell
+%
+The most disastrous thing that you can ever
+learn is your first programming language.
+
+-- Alan Kay
+%
+Mathematics is a more powerful instrument of
+knowledge than any other that has been bequeathed
+to us by human agency.
+
+-- René Descartes
+%
+It is a mistake to think you can solve any
+major problems just with potatoes.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+The answer to the great question of Life, the
+Universe and Everything is... forty-two.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+Time is an illusion. Lunchtime doubly so.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+I've always said there's nothing an agnostic
+can't do if he really doesn't know whether he
+believes in anything or not.
+
+-- Terry Pratchett, Mort
+%
+The trouble with having an open mind, of course,
+is that people will insist on coming along and
+trying to put things in it.
+
+-- Terry Pratchett, Diggers
+%
+Give a man a fire and he's warm for a day, but
+set fire to him and he's warm for the rest of
+his life.
+
+-- Terry Pratchett, Jingo
+%
+It's not worth doing something unless someone,
+somewhere, would much rather you weren't doing
+it.
+
+-- Terry Pratchett, The Truth
+%
+The enemy's gate is down.
+
+-- Orson Scott Card, Ender's Game
+%
+In the moment when I truly understand my enemy,
+understand him well enough to defeat him, then
+in that very moment I also love him.
+
+-- Orson Scott Card, Ender's Game
+%
+The needs of the many outweigh the needs of
+the few.
+
+-- Star Trek II: The Wrath of Khan
+%
+Logic is the beginning of wisdom, not the
+end.
+
+-- Star Trek VI: The Undiscovered Country
+%
+May the Force be with you.
+
+-- Star Wars
+%
+Do or do not, there is no try.
+
+-- Yoda, The Empire Strikes Back
+%
+Fear is the path to the dark side. Fear leads
+to anger, anger leads to hate, hate leads to
+suffering.
+
+-- Yoda, The Phantom Menace
+%
+The first rule of Fight Club is: You do not
+talk about Fight Club.
+
+-- Chuck Palahniuk, Fight Club
+%
+I am not a number! I am a free man!
+
+-- The Prisoner
+%
+Winter is coming.
+
+-- George R.R. Martin, A Game of Thrones
+%
+A mind needs books as a sword needs a whetstone,
+if it is to keep its edge.
+
+-- George R.R. Martin, A Game of Thrones
+%
+The man who passes the sentence should swing
+the sword.
+
+-- George R.R. Martin, A Game of Thrones
+%
+I have always imagined that Paradise will be
+a kind of library.
+
+-- Jorge Luis Borges, Labyrinths
+%
+The universe is not only stranger than we
+imagine, it is stranger than we can imagine.
+
+-- J.B.S. Haldane (often quoted in science fiction)
+%
+Space is big. Really big. You just won't believe
+how vastly, hugely, mind-bogglingly big it is.
+I mean, you may think it's a long way down the
+road to the chemist's, but that's just peanuts
+to space.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+Don't panic.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+I refuse to prove that I exist, says God, for
+proof denies faith, and without faith I am
+nothing.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+The ships hung in the sky in much the same way
+that bricks don't.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+Mostly harmless.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+So long, and thanks for all the fish.
+
+-- Douglas Adams, So Long, and Thanks for All the Fish
+%
+Share and enjoy.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+The story so far: In the beginning the Universe
+was created. This has made a lot of people very
+angry and been widely regarded as a bad move.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+There is another theory which states that this
+has already happened.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+For a moment, nothing happened. Then, after a
+second or so, nothing continued to happen.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+He felt that his whole life was some kind of
+dream and he sometimes wondered whose it was
+and whether they were enjoying it.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+The impossible often has a kind of integrity
+to it which the merely improbable lacks.
+
+-- Douglas Adams, The Long Dark Tea-Time of the Soul
+%
+Anyone who is capable of getting themselves
+made President should on no account be allowed
+to do the job.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+Human beings, who are almost unique in having
+the ability to learn from the experience of
+others, are also remarkable for their apparent
+disinclination to do so.
+
+-- Douglas Adams, Last Chance to See
+%
+I love deadlines. I love the whooshing noise
+they make as they go by.
+
+-- Douglas Adams
+%
+We demand rigidly defined areas of doubt and
+uncertainty!
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+The fact that we live at the bottom of a deep
+gravity well, on the surface of a gas covered
+planet going around a nuclear fireball 90
+million miles away and think this to be normal
+is obviously some indication of how skewed our
+perspective tends to be.
+
+-- Douglas Adams, The Salmon of Doubt
+%
+A common mistake that people make when trying
+to design something completely foolproof is to
+underestimate the ingenuity of complete
+fools.
+
+-- Douglas Adams, Mostly Harmless
+%
+You live and learn. At any rate, you live.
+
+-- Douglas Adams, Mostly Harmless
+%
+In those days spirits were brave, the stakes
+were high, men were real men, women were real
+women and small furry creatures from Alpha
+Centauri were real small furry creatures from
+Alpha Centauri.
+
+-- Douglas Adams, The Hitchhiker's Guide to the Galaxy
+%
+The major difference between a thing that might
+go wrong and a thing that cannot possibly go
+wrong is that when a thing that cannot possibly
+go wrong goes wrong it usually turns out to be
+impossible to get at or repair.
+
+-- Douglas Adams, Mostly Harmless
+%
+Nothing travels faster than the speed of light
+with the possible exception of bad news, which
+obeys its own special laws.
+
+-- Douglas Adams, Mostly Harmless
+%
+The Guide says there is an art to flying", said Ford,
+"or rather a knack. The knack lies in learning how to
+throw yourself at the ground and miss.
+
+-- Douglas Adams, Life, the Universe and Everything
+%
+There is a theory which states that if ever
+anyone discovers exactly what the Universe is
+for and why it is here, it will instantly
+disappear and be replaced by something even
+more bizarre and inexplicable.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+Reality is frequently inaccurate.
+
+-- Douglas Adams, The Restaurant at the End of the Universe
+%
+The best way to find out if you can trust
+somebody is to trust them.
+
+-- Ernest Hemingway
+%
+A ship in port is safe, but that's not what
+ships are built for.
+
+-- Grace Hopper
+%
+The master has failed more times than the
+beginner has even tried.
+
+-- Stephen McCranie
+%
+The best time to plant a tree was 20 years ago.
+The second best time is now.
+
+-- Chinese Proverb
+%
+In theory, theory and practice are the same.
+In practice, they're not.
+
+-- Yogi Berra
+%
+A good game is easy to learn and hard to
+master.
+
+-- Nolan Bushnell
+%
+The important thing is not to stop
+questioning.
+
+-- Albert Einstein
+%
+Do not go where the path may lead, go instead
+where there is no path and leave a trail.
+
+-- Ralph Waldo Emerson
+%
+Good design is as little design as possible.
+
+-- Dieter Rams
+%
+A problem well stated is a problem half
+solved.
+
+-- Charles Kettering
+%
+A user interface is like a joke. If you have
+to explain it, it's not that good.
+
+-- Martin LeBlanc
+%
+Games are the most elevated form of
+investigation.
+
+-- Albert Einstein
+%
+Software is like entropy: It is difficult to
+grasp, weighs nothing, and obeys the Second
+Law of Thermodynamics.
+
+-- Norman Augustine
+%
+Be yourself; everyone else is already taken.
+
+-- Oscar Wilde
+%
+In God we trust. All others must bring data.
+
+-- W. Edwards Deming
+%
+The best way to get started is to quit talking
+and begin doing.
+
+-- Walt Disney
+%
+What we play is life.
+
+-- Louis Armstrong
+%
+The greatest enemy of knowledge is not ignorance,
+it is the illusion of knowledge.
+
+-- Stephen Hawking
+%
+The future belongs to those who believe in the
+beauty of their dreams.
+
+-- Eleanor Roosevelt
+%
+Success is not final, failure is not fatal: it
+is the courage to continue that counts.
+
+-- Winston Churchill
+%
+If you want to go fast, go alone. If you want
+to go far, go together.
+
+-- African Proverb
+%
+Strategy without tactics is the slowest route
+to victory. Tactics without strategy is the
+noise before defeat.
+
+-- Sun Tzu
+%
+Imagination is more important than knowledge.
+
+-- Albert Einstein
+%
+A goal is a dream with a deadline.
+
+-- Napoleon Hill
+%
+In the middle of difficulty lies opportunity.
+
+-- Albert Einstein
+%
+The only impossible journey is the one you
+never begin.
+
+-- Tony Robbins
+%
+Good code is its own best documentation.
+
+-- Steve McConnell
+%
+Whether you think you can or you think you
+can't, you're right.
+
+-- Henry Ford
+%
+Life is what happens to you while you're busy
+making other plans.
+
+-- John Lennon
+%
+A computer program is said to learn from
+experience 'E' with respect to some task 'T'
+if its performance on 'T' improves with 'E'.
+
+-- Tom Mitchell
+%
+Don't let yesterday take up too much of
+today.
+
+-- Will Rogers
+%
+The only way to do great work is to love what
+you do.
+
+-- Steve Jobs
+%
+Any program that tries to be so general and
+configurable that it could handle any kind of
+task will either fall short of this goal, or
+will be horribly broken.
+
+-- Chris Wenham
+%
+Innovation distinguishes between a leader and
+a follower.
+
+-- Steve Jobs
+%
+Logic will get you from A to B. Imagination
+will take you everywhere.
+
+-- Albert Einstein
+%
+Life is 10% what happens to you and 90%
+how you react to it.
+
+-- Charles R. Swindoll
+%
+Give someone a program, you frustrate them for
+a day; teach them how to program, you frustrate
+them for a lifetime.
+%
+The expert in anything was once a beginner.
+
+-- Helen Hayes
+%
+Strive not to be a success, but rather to be
+of value.
+
+-- Albert Einstein
+%
+The greatest glory in living lies not in never
+falling, but in rising every time we fall.
+
+-- Nelson Mandela
+%
+It always seems impossible until it's done.
+
+-- Nelson Mandela
+%
+The best revenge is massive success.
+
+-- Frank Sinatra
+%
+The future depends on what you do today.
+
+-- Mahatma Gandhi
+%
+Code is poetry.
+
+-- Unknown
+%
+You are never too old to set another goal or
+to dream a new dream.
+
+-- C.S. Lewis
+%
+The good thing about science is that it's true
+whether or not you believe in it.
+
+-- Neil deGrasse Tyson
+%
+Don't be afraid to give up the good to go for
+the great.
+
+-- John D. Rockefeller
+%
+The secret of getting ahead is getting
+started.
+
+-- Mark Twain
+%
+Success is not the key to happiness. Happiness
+is the key to success.
+
+-- Albert Schweitzer
+%
+Do something today that your future self will
+thank you for.
+
+-- Sean Patrick Flanery
+%
+The most beautiful thing we can experience is
+the mysterious.
+
+-- Albert Einstein
+%
+Believe you can and you're halfway there.
+
+-- Theodore Roosevelt
+%
+Quality is not an act, it is a habit.
+
+-- Aristotle
+%
+If you want to lift yourself up, lift up someone
+else.
+
+-- Booker T. Washington
+%
+Real programmers count from 0.
+
+-- Unknown
+%
+The only person you are destined to become is
+the person you decide to be.
+
+-- Ralph Waldo Emerson
+%
+Everything you've ever wanted is on the other
+side of fear.
+
+-- George Addair
+%
+What lies behind us and what lies before us
+are tiny matters compared to what lies within
+us.
+
+-- Ralph Waldo Emerson
+%
+Act as if what you do makes a difference. It
+does.
+
+-- William James
+%
+Don't watch the clock; do what it does. Keep
+going.
+
+-- Sam Levenson
+%
+The way to achieve your own success is to be
+willing to help somebody else get it first.
+
+-- Iyanla Vanzant
+%
+If you're going through hell, keep going.
+
+-- Winston Churchill
+%
+Success is stumbling from failure to failure
+with no loss of enthusiasm.
+
+-- Winston Churchill
+%
+The difference between ordinary and extraordinary
+is that little extra.
+
+-- Jimmy Johnson
+%
+You don't have to be great to get started, but
+you have to get started to be great.
+
+-- Les Brown
+%
+A journey of a thousand miles begins with a
+single step.
+
+-- Lao Tzu
+%
+Your limitation—it's only your imagination.
+
+-- Unknown
+%
+Great things never come from comfort zones.
+
+-- Unknown
+%
+The roots of education are bitter, but the
+fruit is sweet.
+
+-- Aristotle
+%
+Dream big and dare to fail.
+
+-- Norman Vaughan
+%
+Don't limit your challenges. Challenge your
+limits.
+
+-- Unknown
+%
+Push yourself, because no one else is going to
+do it for you.
+
+-- Unknown
+%
+The only true failure is the failure to try.
+
+-- Unknown
+%
+Success doesn't just find you. You have to go
+out and get it.
+
+-- Unknown
+%
+The harder you work for something, the greater
+you'll feel when you achieve it.
+
+-- Unknown
+%
+Don't stop when you're tired. Stop when you're
+done.
+
+-- Unknown
+%
+Wake up with determination. Go to bed with
+satisfaction.
+
+-- Unknown
+%
+Little things make big days.
+
+-- Unknown
+%
+It's going to be hard, but hard does not mean
+impossible.
+
+-- Unknown
+%
+Don't wait for opportunity. Create it.
+
+-- Unknown
+%
+If you want something you've never had, you
+must be willing to do something you've never
+done.
+
+-- Unknown
+%
+A year from now you may wish you had started
+today.
+
+-- Karen Lamb
+%
+Great things happen to those who don't stop
+believing, trying, learning, and being
+grateful.
+
+-- Unknown
+%
+One day the people that don't even believe in
+you will tell everyone how they met you.
+
+-- Unknown
+%
+If you're not willing to risk the usual, you'll
+have to settle for the ordinary.
+
+-- Jim Rohn
+%
+Sometimes we're tested not to show our weaknesses,
+but to discover our strengths.
+
+-- Unknown
+%
+The key to success is to focus on goals, not
+obstacles.
+
+-- Unknown
+%
+Champions train, losers complain.
+
+-- Unknown
+%
+Everything you need is inside you - you just
+need to access it.
+
+-- Unknown
+%
+Stars can't shine without darkness.
+
+-- Unknown
+%
+If it doesn't challenge you, it won't change
+you.
+
+-- Fred DeVito

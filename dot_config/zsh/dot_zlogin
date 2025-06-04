@@ -1,4 +1,4 @@
 # Funny cow :)
 if [[ $(command -v fortune) && $(command -v cowsay) ]]; then
-	fortune | cowsay
+	fortune ~/.config/fortune | cowsay
 fi
