@@ -18,6 +18,7 @@ return {
         "gopls",
         "jsonls",
         "lua_ls",
+        "pyright",
         "rust_analyzer",
         "tailwindcss",
         "taplo",
@@ -33,6 +34,7 @@ return {
     lspconfig.gopls.setup({})
     lspconfig.jsonls.setup({})
     lspconfig.lua_ls.setup({})
+    lspconfig.pyright.setup({})
     lspconfig.rust_analyzer.setup({})
     lspconfig.tailwindcss.setup({})
     lspconfig.taplo.setup({})
