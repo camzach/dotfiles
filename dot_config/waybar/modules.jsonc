@@ -32,8 +32,7 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "󰥔 {0:%I:%M}",
-    "format-alt": "󰥔 {0:%H:%M}   {0:%d-%m-%Y}"
+    "format": "󰥔 {0:%I:%M}   {0:%A, %b %d %Y}"
   },
   "hyprland/language": {
     "format": "/ K {short}"
