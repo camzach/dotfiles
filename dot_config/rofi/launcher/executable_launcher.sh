@@ -8,4 +8,4 @@
 ## Run
 rofi \
 	-show drun \
-	-theme $HOME/.config/rofi/launcher/style.rasi
+	-theme $XDG_CONFIG_HOME/rofi/launcher/style.rasi
