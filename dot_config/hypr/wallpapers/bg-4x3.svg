@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1024 768" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2847;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="secondaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Subtle noise filter -->
+    <filter id="noise">
+      <feTurbulence baseFrequency="0.9" numOctaves="1" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 .02"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="768" fill="url(#bgGradient)"/>
+  
+  <!-- Geometric shapes adapted for 4:3 -->
+  <!-- Large background triangles -->
+  <polygon points="0,0 350,0 175,350" fill="url(#accentGradient)" opacity="0.25"/>
+  <polygon points="1024,768 724,768 874,418" fill="url(#secondaryGradient)" opacity="0.2"/>
+  
+  <!-- Floating geometric elements with motion blur effect -->
+  <circle cx="800" cy="150" r="80" fill="url(#accentGradient)" opacity="0.45" transform="rotate(45 800 150)"/>
+  <!-- Motion trail for circle -->
+  <circle cx="790" cy="140" r="75" fill="url(#accentGradient)" opacity="0.15" transform="rotate(30 790 140)"/>
+  <circle cx="780" cy="130" r="70" fill="url(#accentGradient)" opacity="0.08" transform="rotate(15 780 130)"/>
+  
+  <rect x="80" y="600" width="120" height="120" fill="url(#secondaryGradient)" opacity="0.4" transform="rotate(45 140 660)"/>
+  <!-- Motion trails for square -->
+  <rect x="75" y="595" width="115" height="115" fill="url(#secondaryGradient)" opacity="0.15" transform="rotate(40 132.5 652.5)"/>
+  <rect x="70" y="590" width="110" height="110" fill="url(#secondaryGradient)" opacity="0.08" transform="rotate(35 125 645)"/>
+  
+  <!-- Hexagonal pattern - centered for 4:3 -->
+  <g opacity="0.35">
+    <polygon points="512,200 552,220 552,260 512,280 472,260 472,220" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+    <polygon points="592,240 632,260 632,300 592,320 552,300 552,260" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+    <polygon points="432,240 472,260 472,300 432,320 392,300 392,260" fill="none" stroke="url(#accentGradient)" stroke-width="3"/>
+  </g>
+  
+  <!-- Abstract flowing lines with implied motion -->
+  <path d="M0,384 Q256,250 512,384 T1024,384" fill="none" stroke="url(#accentGradient)" stroke-width="3" opacity="0.4"/>
+  <!-- Motion trails for the main flow line -->
+  <path d="M0,379 Q261,260 517,379 T1024,379" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.2"/>
+  <path d="M0,389 Q251,240 507,389 T1024,389" fill="none" stroke="url(#accentGradient)" stroke-width="2" opacity="0.2"/>
+  
+  <path d="M0,450 Q128,550 256,450 Q384,350 512,450 Q640,550 768,450 Q896,350 1024,450" fill="none" stroke="url(#secondaryGradient)" stroke-width="2" opacity="0.5"/>
+  <!-- Motion trails for secondary flow -->
+  <path d="M0,455 Q131,540 259,455 Q381,360 509,455 Q637,540 765,455 Q893,360 1024,455" fill="none" stroke="url(#secondaryGradient)" stroke-width="1.5" opacity="0.25"/>
+  <path d="M0,445 Q125,560 253,445 Q387,340 515,445 Q643,560 771,445 Q899,340 1024,445" fill="none" stroke="url(#secondaryGradient)" stroke-width="1.5" opacity="0.25"/>
+  
+  <!-- Corner accent elements -->
+  <g opacity="0.3">
+    <!-- Top left corner -->
+    <rect x="0" y="0" width="200" height="3" fill="url(#accentGradient)"/>
+    <rect x="0" y="0" width="3" height="200" fill="url(#accentGradient)"/>
+    
+    <!-- Bottom right corner -->
+    <rect x="824" y="765" width="200" height="3" fill="url(#secondaryGradient)"/>
+    <rect x="1021" y="568" width="3" height="200" fill="url(#secondaryGradient)"/>
+  </g>
+  
+  <!-- Subtle grid pattern -->
+  <g opacity="0.05" stroke="url(#accentGradient)" stroke-width="0.5" fill="none">
+    <defs>
+      <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+        <path d="M 64 0 L 0 0 0 64"/>
+      </pattern>
+    </defs>
+    <rect width="1024" height="768" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Static particles with motion trails -->
+  <g opacity="0.6">
+    <!-- Particle with trail effect -->
+    <circle cx="200" cy="180" r="2" fill="#4a9eff"/>
+    <circle cx="195" cy="185" r="1.5" fill="#4a9eff" opacity="0.6"/>
+    <circle cx="190" cy="190" r="1" fill="#4a9eff" opacity="0.3"/>
+    
+    <circle cx="850" cy="500" r="3" fill="#ff6b9d"/>
+    <circle cx="845" cy="495" r="2.5" fill="#ff6b9d" opacity="0.6"/>
+    <circle cx="840" cy="490" r="2" fill="#ff6b9d" opacity="0.3"/>
+    
+    <circle cx="400" cy="120" r="1.5" fill="#fbbf24"/>
+    <circle cx="395" cy="115" r="1.2" fill="#fbbf24" opacity="0.6"/>
+    <circle cx="390" cy="110" r="0.8" fill="#fbbf24" opacity="0.3"/>
+    
+    <!-- Additional streaking particles -->
+    <ellipse cx="650" cy="300" rx="6" ry="1.5" fill="#8b5cf6" opacity="0.4" transform="rotate(25 650 300)"/>
+    <ellipse cx="250" cy="580" rx="5" ry="1.2" fill="#4a9eff" opacity="0.5" transform="rotate(-15 250 580)"/>
+    <ellipse cx="750" cy="650" rx="4" ry="1" fill="#ff6b9d" opacity="0.4" transform="rotate(35 750 650)"/>
+  </g>
+  
+  <!-- Subtle noise overlay -->
+  <rect width="1024" height="768" fill="url(#bgGradient)" filter="url(#noise)" opacity="0.03"/>
+</svg>
