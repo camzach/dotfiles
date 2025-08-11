@@ -10,6 +10,7 @@ return {
     local mason_lspconfig = require("mason-lspconfig")
 
     mason.setup()
+    
     mason_lspconfig.setup({
       ensure_installed = {
         "bashls",
@@ -24,21 +25,17 @@ return {
         "taplo",
         "ts_ls",
       },
+      automatic_enable = {
+        exclude = {
+          "bashls",
+        }
+      }
     })
-
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    local opts = { capabilities = capabilities }
-    lspconfig.bashls.setup({ filetypes = { "sh", "bash", "zsh" } })
-    lspconfig.emmet_language_server.setup({})
-    lspconfig.eslint.setup({})
-    lspconfig.gopls.setup({})
-    lspconfig.jsonls.setup({})
-    lspconfig.lua_ls.setup({})
-    lspconfig.pyright.setup({})
-    lspconfig.rust_analyzer.setup({})
-    lspconfig.tailwindcss.setup({})
-    lspconfig.taplo.setup({})
-    lspconfig.ts_ls.setup({})
+    
+    lspconfig.bashls.setup({
+      capabilities = capabilities,
+      filetypes = { "sh", "bash", "zsh" }
+    })
 
     vim.diagnostic.config({
       signs = {
