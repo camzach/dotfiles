@@ -10,7 +10,7 @@ return {
     local mason_lspconfig = require("mason-lspconfig")
 
     mason.setup()
-    
+
     mason_lspconfig.setup({
       ensure_installed = {
         "bashls",
@@ -21,6 +21,7 @@ return {
         "lua_ls",
         "pyright",
         "rust_analyzer",
+        "stylelint_lsp",
         "tailwindcss",
         "taplo",
         "ts_ls",
@@ -28,13 +29,12 @@ return {
       automatic_enable = {
         exclude = {
           "bashls",
-        }
-      }
+        },
+      },
     })
-    
+
     lspconfig.bashls.setup({
-      capabilities = capabilities,
-      filetypes = { "sh", "bash", "zsh" }
+      filetypes = { "sh", "bash", "zsh" },
     })
 
     vim.diagnostic.config({
@@ -58,13 +58,6 @@ return {
         },
         prefix = "",
         suffix = "",
-      },
-      virtual_text = true,
-      update_in_insert = true,
-    })
-
-    vim.diagnostic.config({
-      float = {
         format = function(diagnostic)
           if diagnostic.source == "rustc" and diagnostic.user_data.lsp.data ~= nil then
             return diagnostic.user_data.lsp.data.rendered
@@ -73,6 +66,8 @@ return {
           end
         end,
       },
+      virtual_text = true,
+      update_in_insert = true,
     })
   end,
 }
