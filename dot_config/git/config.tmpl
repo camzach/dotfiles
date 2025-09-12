@@ -1,0 +1,41 @@
+[user]
+	{{- if .work }}
+	name = Cameron Zach
+	email = cameron.zach@ibm.com
+	signingkey = {{ (onepasswordRead "op://Employee/GitHub Signing Key/public key" "cameron.zach@ibm.com") }}
+	{{- else }}
+	name = camzach
+	email = 22503898+camzach@users.noreply.github.com.
+	{{- end }}
+
+[core]
+	editor = nvim
+	autocrlf = input
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	{{- if eq .chezmoi.os "darwin" }}
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	{{- else if eq .chezmoi.os "linux" }}
+	program = "/opt/bin/op-ssh-sign"
+	{{- end }}
+
+[init]
+	defaultBranch = main
+
+[pull]
+	ff = only
+
+[push]
+	default = simple
+
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+	required = true
