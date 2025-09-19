@@ -5,7 +5,6 @@ return {
     "williamboman/mason-lspconfig.nvim",
   },
   config = function()
-    local lspconfig = require("lspconfig")
     local mason = require("mason")
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -26,15 +25,25 @@ return {
         "taplo",
         "ts_ls",
       },
-      automatic_enable = {
-        exclude = {
-          "bashls",
-        },
-      },
     })
 
-    lspconfig.bashls.setup({
+    vim.lsp.config("bashls", {
       filetypes = { "sh", "bash", "zsh" },
+    })
+
+    vim.lsp.config("lua_ls", {
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = {
+              "vim",
+            },
+          },
+          workspace = {
+            library = vim.api.nvim_get_runtime_file("", true),
+          },
+        },
+      },
     })
 
     vim.diagnostic.config({
