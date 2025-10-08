@@ -33,7 +33,7 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 10
 
 -- Color Configuration
-config.colors = require("cyberdream")
+config.colors = require("colors")
 config.force_reverse_video_cursor = true
 
 -- Window Configuration

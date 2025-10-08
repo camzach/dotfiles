@@ -1,0 +1,164 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](bg:none fg:section_1_bg)\
+[\
+$os\
+${custom.shell_level}\
+$username\
+](bg:section_1_bg fg:section_1_text)\
+[ ](bg:section_2_bg fg:section_1_bg)\
+[\
+$directory\
+](bg:section_2_bg fg:section_2_text)\
+[ ](bg:section_3_bg fg:section_2_bg)\
+[\
+$git_branch\
+$git_status\
+](bg:section_3_bg fg:section_3_text)\
+[ ](bg:section_4_bg fg:section_3_bg)\
+[\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+](bg:section_4_bg fg:section_4_text)\
+[ ](bg:section_5_bg fg:section_4_bg)\
+[\
+$cmd_duration\
+](bg:section_5_bg fg:section_5_text)\
+[](bg:none fg:section_5_bg)\
+$line_break$character"""
+
+palette = "colors"
+
+[palettes.colors]
+section_1_bg = '{{ .color.success.dark }}'
+section_1_text = '{{ .color.success.onDark }}'
+section_2_bg = '{{ .color.primary.dark }}'
+section_2_text = '{{ .color.primary.onDark }}'
+section_3_bg = '{{ .color.tertiary.dark }}'
+section_3_text = '{{ .color.tertiary.onDark }}'
+section_4_bg = '{{ .color.surface.base }}'
+section_4_text = '{{ .color.text.base }}'
+section_5_bg = '{{ .color.surface.variant }}'
+section_5_text = '{{ .color.text.base }}'
+
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[os]
+disabled = false
+format = "$symbol "
+
+[username]
+show_always = true
+format = '$user '
+
+[directory]
+format = "$path "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+format = '$symbol $branch '
+
+[git_status]
+format = '($all_status $ahead_behind) '
+
+[nodejs]
+symbol = ""
+format = '$symbol $version '
+
+[c]
+symbol = " "
+format = '$symbol $version '
+
+[rust]
+symbol = "󱘗"
+format = '$symbol $version '
+
+[golang]
+symbol = ""
+format = '$symbol $version '
+
+[php]
+symbol = ""
+format = '$symbol $version '
+
+[java]
+symbol = ""
+format = '$symbol $version '
+
+[kotlin]
+symbol = ""
+format = '$symbol $version '
+
+[haskell]
+symbol = ""
+format = '$symbol $version '
+
+[python]
+symbol = ""
+format = '$symbol $version '
+
+[cmd_duration]
+format = '\(took $duration\) '
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:color_green)'
+error_symbol = '[](bold fg:color_red)'
+vimcmd_symbol = '[](bold fg:color_green)'
+vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+vimcmd_replace_symbol = '[](bold fg:color_purple)'
+vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+
+[custom.shell_level]
+command = '''
+# Starship executes in a subshell, so bounds need to be adjusted by 1
+if [ "$SHLVL" -gt 3 ]; then
+	echo "*($((SHLVL - 1)))"
+else
+	echo "*"
+fi
+'''
+when = '[ "$SHLVL" -gt 2 ]'
+format = "$output "

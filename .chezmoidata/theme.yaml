@@ -1,0 +1,55 @@
+color:
+  # Primary (blue)
+  primary:
+    base: "#A3B5FF" # Light/bright variant - more saturated blue
+    dark: "#2D4099" # Dark variant (container) - deeper blue
+    on: "#0A1F5C" # Text on primary - richer dark blue
+    onDark: "#D4DDFF" # Text on primary dark
+
+  # Secondary (blue-grey)
+  secondary:
+    base: "#B8BFEA" # Light/bright variant - more saturated
+    dark: "#3A4070" # Dark variant (container) - richer
+    on: "#1F273D" # Text on secondary
+    onDark: "#DCE3FF" # Text on secondary dark
+
+  # Tertiary (purple/pink)
+  tertiary:
+    base: "#EAA8E0" # Light/bright variant - more vibrant pink
+    dark: "#6B3566" # Dark variant (container) - deeper purple
+    on: "#4A1E45" # Text on tertiary
+    onDark: "#FFD0F5" # Text on tertiary dark
+
+  # Success (green)
+  success:
+    base: "#6BE044" # Light/bright variant - more vibrant green
+    dark: "#0D5A23" # Dark variant (container) - richer green
+    on: "#00330F" # Text on success
+    onDark: "#A8F5B8" # Text on success dark
+
+  # Warning (yellow)
+  warning:
+    base: "#E8C800" # Light/bright variant - more saturated yellow
+    dark: "#5A5C00" # Dark variant (container) - richer
+    on: "#2B2E00" # Text on warning
+    onDark: "#F5F080" # Text on warning dark
+
+  # Error (red)
+  error:
+    base: "#FF9B90" # Light/bright variant - more saturated red
+    dark: "#A80008" # Dark variant (container) - deeper red
+    on: "#680003" # Text on error
+    onDark: "#FFD4CF" # Text on error dark
+
+  # Backgrounds & surfaces
+  background: "#0D0E13"
+  surface:
+    base: "#0D0E13"
+    container: "#1A1C24"
+    variant: "#3F4250"
+
+  # Text colors
+  text:
+    base: "#E8E6F0" # Primary text (onBackground) - slightly warmer
+    muted: "#C8C8D8" # Secondary text (onSurfaceVariant) - more contrast
+    dim: "#8C8D9C" # Tertiary text (outline)

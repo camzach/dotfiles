@@ -7,7 +7,7 @@
  * Rofi Version: 1.7.3
  **/
 
-@import "~/.config/rofi/colors/onedark.rasi"
+@import "~/.config/rofi/colors.rasi"
 
 /*****----- Configuration -----*****/
 configuration {

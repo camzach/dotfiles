@@ -1,0 +1,36 @@
+return {
+	foreground = "{{ .color.text.base }}",
+	background = "{{ .color.background }}",
+
+	cursor_bg = "{{ .color.text.base }}",
+	cursor_fg = "{{ .color.background }}",
+	cursor_border = "{{ .color.text.base }}",
+
+	selection_fg = "{{ .color.text.base }}",
+	selection_bg = "{{ .color.surface.container }}",
+
+	scrollbar_thumb = "{{ .color.background }}",
+	split = "{{ .color.background }}",
+
+	ansi = {
+		"{{ .color.background }}",
+		"{{ .color.error.base }}",
+		"{{ .color.success.base }}",
+		"{{ .color.warning.base }}",
+		"{{ .color.primary.base }}",
+		"{{ .color.tertiary.base }}",
+		"{{ .color.tertiary.base }}",
+		"{{ .color.text.base }}"
+	},
+	brights = {
+		"{{ .color.surface.container }}",
+		"{{ .color.error.base }}",
+		"{{ .color.success.base }}",
+		"{{ .color.warning.base }}",
+		"{{ .color.primary.base }}",
+		"{{ .color.tertiary.base }}",
+		"{{ .color.tertiary.base }}",
+		"{{ .color.text.base }}"
+	},
+	indexed = { [16] = "{{ .color.secondary.base }}", [17] = "{{ .color.error.base }}" },
+}
