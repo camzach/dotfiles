@@ -1,22 +1,31 @@
+{{- $pubkey := "" -}}
+{{ if .work }}
+{{ $pubkey = onepasswordRead "op://Employee/GitHub Signing Key/public key" "cameron.zach@ibm.com" }}
+{{ end -}}
+
 [user]
 	{{- if .work }}
 	name = Cameron Zach
 	email = cameron.zach@ibm.com
-	signingkey = {{ (onepasswordRead "op://Employee/GitHub Signing Key/public key" "cameron.zach@ibm.com") }}
 	{{- else }}
 	name = camzach
 	email = 22503898+camzach@users.noreply.github.com.
+	{{- end }}
+	{{- if ne $pubkey ""}}
+	signingkey = {{ $pubkey }}
 	{{- end }}
 
 [core]
 	editor = nvim
 	autocrlf = input
 
+{{ if ne $pubkey "" -}}
 [commit]
 	gpgsign = true
 
 [gpg]
 	format = ssh
+{{- end }}
 
 [gpg "ssh"]
 	{{- if eq .chezmoi.os "darwin" }}
