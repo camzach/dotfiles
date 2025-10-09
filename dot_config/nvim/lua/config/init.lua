@@ -1,2 +1,2 @@
-require("config.lazy")
 require("config.theme").setup()
+require("config.lazy")

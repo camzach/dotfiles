@@ -1,27 +1,28 @@
 local M = {}
 
-function M.setup()
-  local colors = {
-    bg = "{{ .color.background }}",
-    bg_alt = "{{ .color.surface.variant }}",
-    fg = "{{ .color.text.base }}",
-    fg_alt = "{{ .color.text.dim }}",
-    blue = "{{ .color.primary.base }}",
-    green = "{{ .color.success.base }}",
-    red = "{{ .color.error.base }}",
-    yellow = "{{ .color.warning.base }}",
-    purple = "{{ .color.tertiary.base }}",
-    cyan = "{{ .color.secondary.base }}",
-    orange = "{{ .color.warning.base }}",
-  }
+local colors = {
+  bg = "{{ .color.background }}",
+  bg_alt = "{{ .color.surface.variant }}",
+  fg = "{{ .color.text.base }}",
+  fg_alt = "{{ .color.text.dim }}",
+  blue = "{{ .color.primary.base }}",
+  green = "{{ .color.success.base }}",
+  red = "{{ .color.error.base }}",
+  yellow = "{{ .color.warning.base }}",
+  purple = "{{ .color.tertiary.base }}",
+  cyan = "{{ .color.secondary.base }}",
+  orange = "{{ .color.warning.base }}",
+}
+M.colors = colors
 
+function M.setup()
   local highlights = {
     -- General
     Normal = { fg = colors.fg },
     Visual = { bg = colors.bg_alt },
     CursorLine = { bg = colors.bg_alt },
     ColorColumn = { bg = colors.bg_alt },
-    LineNr = { fg = colors.purple },
+    LineNr = { fg = colors.fg_alt },
     CursorLineNr = { fg = colors.fg, bg = colors.bg_alt },
 
     -- Syntax
