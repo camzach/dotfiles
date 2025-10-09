@@ -8,61 +8,10 @@ general {
 
 # BACKGROUND
 background {
-  monitor =
   path = /tmp/hyprlock/glitched.png
   reload_time = 2
   reload_cmd = "$XDG_CONFIG_HOME/hypr/hypr-bg/regen-bg.sh"
   blur_passes = 0
-}
-
-# LAYOUT
-label {
-  monitor =
-  text = Layout: $LAYOUT
-  color = {{ .color.text.base }}
-  font_size = 25
-  font_family = $font
-  position = 30, -30
-  halign = left
-  valign = top
-}
-
-# TIME
-label {
-  monitor =
-  text = $TIME
-  color = {{ .color.text.base }}
-  font_size = 90
-  font_family = $font
-  position = -30, 0
-  halign = right
-  valign = top
-}
-
-# DATE
-label {
-  monitor =
-  text = cmd[update:43200000] date +"%A, %d %B %Y"
-  color = {{ .color.text.base }}
-  font_size = 25
-  font_family = $font
-  position = -30, -150
-  halign = right
-  valign = top
-}
-
-# FINGERPRINT
-$font = JetBrainsMono Nerd Font
-
-# GENERAL
-general {
-  hide_cursor = true
-  immediate_render = true
-}
-
-# BACKGROUND
-background {
-  color = rgb(13, 14, 19)
 }
 
 # LAYOUT
@@ -99,14 +48,14 @@ label {
 }
 
 # USER AVATAR (uncomment when you have a valid image)
-# image {
-#   path = $HOME/.face
-#   size = 100
-#   border_color = {{ .color.primary.base }}
-#   position = 0, 75
-#   halign = center
-#   valign = center
-# }
+image {
+  path = $HOME/.face
+  size = 100
+  border_color = {{ .color.primary.base }}
+  position = 0, 75
+  halign = center
+  valign = center
+}
 
 # INPUT FIELD
 input-field {
