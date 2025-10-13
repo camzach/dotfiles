@@ -1088,3 +1088,30 @@ If it doesn't challenge you, it won't change
 you.
 
 -- Fred DeVito
+%
+The world is continuous, but the mind is discrete
+
+-- David Mumford
+%
+To many, mathematics is a collection of theorems.
+For me, mathematics is a collection of examples; a
+theorem is a statement about a collection of examples
+and the purpose of proving theorems is to classify
+and explain the examples...
+
+-- John Conway
+%
+I have never done anything "useful". No discovery of
+mine has made, or is likely to make, directly or
+indirectly, for good or ill, the least difference to
+the amenity of the world.
+
+-- G. H. Hardy
+%
+Reductio ad absurdum, which Euclid loved so much, is 
+one of a mathematician's finest weapons. It is a far
+finer gambit than any chess play: a chess player may
+offer the sacrifice of a pawn or a piece, but a
+mathematician offers the game.
+
+-- G. H. Hardy
