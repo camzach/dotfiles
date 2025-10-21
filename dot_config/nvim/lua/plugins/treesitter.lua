@@ -5,7 +5,7 @@ return {
     dependencies = {
       {
         "windwp/nvim-autopairs",
-        config = true
+        config = true,
       },
       {
         "windwp/nvim-ts-autotag",
