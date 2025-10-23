@@ -38,21 +38,41 @@ end
 return {
   "nvim-telescope/telescope.nvim",
   event = "VeryLazy",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-telescope/telescope-ui-select.nvim",
+  },
   opts = {
-    pickers = {
-      diagnostics = { previewer = false, theme = "ivy" },
-      find_files = { theme = "ivy", hidden = true },
-      buffers = { previewer = false, theme = "ivy" },
-      current_buffer_fuzzy_find = { theme = "ivy" },
-      resume = { previewer = false, theme = "ivy" },
-      live_grep = { theme = "ivy" },
-    },
     defaults = {
+      layout_strategy = "horizontal",
       layout_config = {
         prompt_position = "bottom",
+        width = 0.9,
+        height = 0.4,
+        preview_width = 0.6,
       },
+      preview = false,
+      border = true,
+      borderchars = {
+        prompt = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+        results = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+        preview = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+      },
+      prompt_prefix = "> ",
+      selection_caret = "> ",
+    },
+    pickers = {
+      current_buffer_fuzzy_find = { preview = true },
+      diagnostics = { preview = true },
+      live_grep = { preview = true },
+      marks = { preview = true },
     },
   },
+  config = function(_, opts)
+    local telescope = require("telescope")
+    telescope.setup(opts)
+    telescope.load_extension("ui-select")
+  end,
   keys = {
     { "<leader>z", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "File fuzzy find" },
     { "<leader>d", "<cmd>Telescope diagnostics<cr>", desc = "Show diagnostics" },
@@ -63,6 +83,6 @@ return {
     { "<leader>ss", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
     { "<leader>sd", live_grep_in_directory, desc = "Live grep in directory" },
     { "<leader>sb", live_grep_in_open_buffers, desc = "Live grep in open buffers" },
+    { "<leader>m", "<cmd>Telescope marks<cr>", desc = "Show marks" },
   },
-  dependencies = { "nvim-lua/plenary.nvim" },
 }
