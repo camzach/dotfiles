@@ -34,13 +34,14 @@ return {
         relculright = true,
         segments = {
           {
-            sign = { namespace = { "diagnostic/signs" }, maxwidth = 2, auto = true },
-            click = "v:lua.ScSa",
+            sign = { name = { "Marks_.*" }, maxwidth = 1, colwidth = 1, auto = true },
           },
-          { text = { builtin.lnumfunc }, click = "v:lua.ScLa" },
           {
-            sign = { namespace = { "gitsigns" }, name = { ".*" }, maxwidth = 2, colwidth = 1, auto = true },
-            click = "v:lua.ScSa",
+            sign = { namespace = { ".*diagnostic.*" }, maxwidth = 1, colwidth = 1, auto = true },
+          },
+          { text = { builtin.lnumfunc } },
+          {
+            sign = { namespace = { "gitsigns" }, maxwidth = 1, colwidth = 1, auto = true },
           },
           { text = { " " } },
         },
