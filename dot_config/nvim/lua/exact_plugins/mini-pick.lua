@@ -33,8 +33,8 @@ return {
           ---@diagnostic disable-next-line: deprecated
           unpack(vim.split(full_query, "::", { plain = true }))
 
-        -- Build command
-        local command = {
+        -- Build base ripgrep command
+        local rg_cmd = {
           "rg",
           "--color=never",
           "--no-heading",
@@ -46,14 +46,17 @@ return {
 
         -- Add search pattern
         if search_pattern and search_pattern ~= "" then
-          table.insert(command, "-e")
-          table.insert(command, search_pattern)
+          table.insert(rg_cmd, "-e")
+          table.insert(rg_cmd, search_pattern)
         end
 
-        -- Add file/dir pattern if provided
+        -- If file pattern provided, pipe through fzf for fuzzy path matching
+        local command
         if file_pattern and file_pattern ~= "" then
-          table.insert(command, "-g")
-          table.insert(command, file_pattern)
+          local rg_str = table.concat(rg_cmd, " ")
+          command = { "sh", "-c", rg_str .. " | fzf -f '" .. file_pattern .. "'" }
+        else
+          command = rg_cmd
         end
 
         process = MiniPick.set_picker_items_from_cli(command, {
@@ -94,8 +97,23 @@ return {
       })
     end
 
+    local function files_no_ignore()
+      local command = { "rg", "--files", "--no-ignore", "--hidden" }
+      return pick.start({
+        source = {
+          name = "All Files (including ignored)",
+          items = vim.fn.systemlist(command),
+          show = function(buf_id, items_to_show, query)
+            pick.default_show(buf_id, items_to_show, query, { show_icons = true })
+          end,
+          choose = pick.default_choose,
+        },
+      })
+    end
+
     vim.keymap.set("n", "<leader>d", extra.pickers.diagnostic, { desc = "Show diagnostics" })
     vim.keymap.set("n", "<leader>f", pick.builtin.files, { desc = "Find files" })
+    vim.keymap.set("n", "<leader>F", files_no_ignore, { desc = "Find all files (no ignore)" })
     vim.keymap.set("n", "<leader>c", pick.registry.resume, { desc = "Resume search" })
     vim.keymap.set("n", "<leader>b", pick.builtin.buffers, { desc = "Buffers" })
     vim.keymap.set("n", "<leader>s", grep_picker, { desc = "Grep" })
