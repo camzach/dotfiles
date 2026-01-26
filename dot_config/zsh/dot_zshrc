@@ -68,3 +68,7 @@ fi
 if [[ "$(command -v zoxide)" ]]; then
 	eval "$(zoxide init zsh --cmd cd)"
 fi
+
+if [[ "$(command -v eza)" ]]; then
+	alias ls='eza --icons'
+fi
