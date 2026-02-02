@@ -17,7 +17,7 @@ _comp_options+=(globdots) # With hidden files
 setopt MENU_COMPLETE    # Automatically highlight first element of completion menu
 setopt AUTO_LIST        # Automatically list choices on ambiguous completion.
 setopt COMPLETE_IN_WORD # Complete from both ends of a word.
-setopt CORRECT_ALL      # Correct misspelled commands and args
+setopt CORRECT          # Correct misspelled commands
 
 # Define completers
 zstyle ':completion:*' completer _extensions _complete _approximate
