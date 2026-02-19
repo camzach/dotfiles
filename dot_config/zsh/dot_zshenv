@@ -16,7 +16,6 @@ fi
 FNM_PATH="$XDG_DATA_HOME/fnm"
 if [ -d "$FNM_PATH" ]; then
 	export PATH="$FNM_PATH:$PATH"
-	eval "$(fnm env --use-on-cd --shell zsh)"
 fi
 
 export PNPM_HOME="$XDG_DATA_HOME/pnpm"
@@ -24,3 +23,12 @@ case ":$PATH:" in
 	*":$PNPM_HOME:"*) ;;
 	*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# Setup nvim as editor, using vim as fallback
+if [[ "$(command -v nvim)" ]]; then
+	export EDITOR="nvim"
+	export VISUAL="nvim"
+elif [[ "$(command -v vim)" ]]; then
+	export EDITOR="vim"
+	export VISUAL="vim"
+fi
