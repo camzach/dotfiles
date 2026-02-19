@@ -51,6 +51,29 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
+source_zsh_plugin() {
+	local plugin_name="$1"
+	local plugin_file="${plugin_name}.zsh"
+	
+	local search_paths=(
+		"/opt/homebrew/share/${plugin_name}"
+		"/usr/share/zsh/plugins/${plugin_name}"
+		"/usr/share/${plugin_name}"
+		"/usr/local/share/${plugin_name}"
+	)
+	
+	for plugin_path in "${search_paths[@]}"; do
+		if [[ -f "${plugin_path}/${plugin_file}" ]]; then
+			# Not possible to provide a consistent source for shellcheck here
+			# shellcheck disable=SC1090
+			source "${plugin_path}/${plugin_file}"
+			return 0
+		fi
+	done
+	return 1
+}
+source_zsh_plugin "zsh-syntax-highlighting"
+
 # Initialize fnm for interactive shells
 if [[ "$(command -v fnm)" ]]; then
 	eval "$(fnm env --use-on-cd --shell zsh)"
