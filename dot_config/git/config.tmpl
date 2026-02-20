@@ -49,3 +49,24 @@
         smudge = git-lfs smudge -- %f
         process = git-lfs filter-process
 	required = true
+
+[rerere]
+	enabled = true
+
+[rebase]
+	autoStash = true
+
+[diff]
+	algorithm = histogram
+
+[merge]
+	conflictStyle = zdiff3
+
+[branch]
+	sort = -committerdate
+
+[column]
+	ui = auto
+
+[help]
+	autoCorrect = prompt
