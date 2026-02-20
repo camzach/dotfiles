@@ -10,6 +10,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "bashls",
+          "biome",
           "emmet_language_server",
           "eslint",
           "gopls",
