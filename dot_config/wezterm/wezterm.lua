@@ -91,6 +91,15 @@ wezterm.on("format-tab-title", function(tab, _, _, _, hover)
 	end
 
 	local title = tostring(tab.tab_index + 1)
+
+	-- Check if any pane is zoomed
+	for _, pane in ipairs(tab.panes) do
+		if pane.is_zoomed then
+			title = title .. " 🔍"
+			break
+		end
+	end
+
 	return {
 		{ Foreground = { Color = background } },
 		{ Text = "█" },
@@ -102,41 +111,65 @@ wezterm.on("format-tab-title", function(tab, _, _, _, hover)
 	}
 end)
 
+-- Right Status Bar
+wezterm.on("update-right-status", function(window, pane)
+	local zoomed = ""
+	if pane:tab():active_pane():pane_id() == pane:pane_id() then
+		for _, p in ipairs(pane:tab():panes()) do
+			if p:is_zoomed() then
+				zoomed = " 🔍 ZOOMED "
+				break
+			end
+		end
+	end
+	window:set_right_status(wezterm.format({
+		{ Background = { Color = config.colors.brights[7] } },
+		{ Foreground = { Color = config.colors.background } },
+		{ Text = zoomed },
+	}))
+end)
+
 -- Leader Key Configuration (like tmux)
-config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+config.leader = { key = "b", mods = "CTRL", timeout_milliseconds = 1000 }
 
 -- Keybindings
 config.keys = {
 	-- Disable ALT+Enter to allow it to pass through to nvim
 	{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
 
-	-- Navigate panes: CTRL+A then h/j/k/l
+	-- Navigate panes: CTRL+B then h/j/k/l
 	{ key = "h", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Left") },
 	{ key = "j", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Up") },
 	{ key = "l", mods = "LEADER", action = wezterm.action.ActivatePaneDirection("Right") },
 
-	-- Split panes: CTRL+A then - or |
+	-- Split panes: CTRL+B then - or |
 	{ key = "-", mods = "LEADER", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	{ key = "|", mods = "LEADER|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 
-	-- Close pane: CTRL+A then x
+	-- Close pane: CTRL+B then x
 	{ key = "x", mods = "LEADER", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
 
-	-- Resize panes: CTRL+A then H/J/K/L (shift held)
+	-- Resize panes: CTRL+B then H/J/K/L (shift held)
 	{ key = "H", mods = "LEADER|SHIFT", action = wezterm.action.AdjustPaneSize({ "Left", 5 }) },
 	{ key = "J", mods = "LEADER|SHIFT", action = wezterm.action.AdjustPaneSize({ "Down", 5 }) },
 	{ key = "K", mods = "LEADER|SHIFT", action = wezterm.action.AdjustPaneSize({ "Up", 5 }) },
 	{ key = "L", mods = "LEADER|SHIFT", action = wezterm.action.AdjustPaneSize({ "Right", 5 }) },
 
-	-- Swap panes: CTRL+A then s
+	-- Swap panes: CTRL+B then s
 	{ key = "s", mods = "LEADER", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
 
-	-- Launcher: CTRL+A then Space
+	-- Launcher: CTRL+B then Space
 	{ key = "Space", mods = "LEADER", action = wezterm.action.ShowLauncher },
 
-	-- Send CTRL+A to terminal (for tools that use it): CTRL+A then a
-	{ key = "a", mods = "LEADER|CTRL", action = wezterm.action.SendKey({ key = "a", mods = "CTRL" }) },
+	-- Send CTRL+B to terminal (for tools that use it): CTRL+B then b
+	{ key = "b", mods = "LEADER|CTRL", action = wezterm.action.SendKey({ key = "b", mods = "CTRL" }) },
+
+	-- Copy mode: CTRL+B then [
+	{ key = "[", mods = "LEADER", action = wezterm.action.ActivateCopyMode },
+
+	-- Zoom pane toggle: CTRL+B then z
+	{ key = "z", mods = "LEADER", action = wezterm.action.TogglePaneZoomState },
 }
 
 -- Wayland Configuration (Linux only)
