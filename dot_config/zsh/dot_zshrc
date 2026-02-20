@@ -4,6 +4,8 @@ export SAVEHIST=10000                # Maximum events in history filepath
 setopt HIST_IGNORE_DUPS
 setopt HIST_REDUCE_BLANKS
 
+bindkey -e
+
 source "$ZDOTDIR/completion.zsh"
 
 autoload -Uz edit-command-line
