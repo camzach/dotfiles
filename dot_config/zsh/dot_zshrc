@@ -91,5 +91,5 @@ if [[ "$(command -v zoxide)" ]]; then
 fi
 
 if [[ "$(command -v eza)" ]]; then
-	alias ls='eza --icons'
+	alias ls='eza --icons auto'
 fi
