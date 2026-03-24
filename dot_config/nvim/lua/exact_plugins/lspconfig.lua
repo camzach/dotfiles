@@ -14,6 +14,7 @@ return {
           "emmet_language_server",
           "eslint",
           "gopls",
+          "hls",
           "jsonls",
           "lua_ls",
           "pyright",

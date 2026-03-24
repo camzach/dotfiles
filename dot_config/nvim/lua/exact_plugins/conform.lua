@@ -21,6 +21,7 @@ return {
       go = { "gofmt" },
       zsh = { "shfmt" },
       sh = { "shfmt" },
+      hs = { "fourmolu" }
     },
     formatters = {
       shfmt = {
