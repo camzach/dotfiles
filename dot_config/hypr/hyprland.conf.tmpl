@@ -224,6 +224,11 @@ bind = SHIFT, Print, exec, grim - | wl-copy
 bind = ALT SHIFT, Print, exec, grim -g "$(slurp -o)" - | wl-copy
 bind = ALT, Print, exec, grim -g "$(hyprctl clients -j | jq -r ".[] | select(.workspace.id | IN($(hyprctl -j monitors | jq 'map(.activeWorkspace.id) | join(",")' | tr -d \")))" | jq -r ".at,.size" | jq -s "add" | jq '_nwise(4)' | jq -r '"\(.[0]),\(.[1]) \(.[2])x\(.[3])"'| slurp)" - | wl-copy
 
+# Change audio output for current window
+bind = $mainMod SHIFT, M, exec, $XDG_CONFIG_HOME/hypr/audio-picker-currentwindow.sh
+# Change default audio device
+bind = $mainMod, M, exec, $XDG_CONFIG_HOME/hypr/audio-picker.sh
+
 ##############################
 ### WINDOWS AND WORKSPACES ###
 ##############################
