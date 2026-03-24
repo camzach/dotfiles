@@ -6,6 +6,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Initialize homebrew for macOS
 if [[ -f /opt/homebrew/bin/brew ]]; then
@@ -31,4 +32,11 @@ if [[ "$(command -v nvim)" ]]; then
 elif [[ "$(command -v vim)" ]]; then
 	export EDITOR="vim"
 	export VISUAL="vim"
+fi
+
+# ghcup
+GHCUP_PATH="$XDG_DATA_HOME/ghcup"
+if [ -d "$GHCUP_PATH" ]; then
+	export GHCUP_USE_XDG_DIRS=true
+	export PATH="$GHCUP_PATH/bin:$PATH"
 fi
