@@ -1,1 +1,5 @@
-{{if lookPath "rustup"}}{{output "rustup" "completions" "zsh" "rustup"}}{{end}}
+{{if lookPath "rustup" -}}
+{{- output "rustup" "completions" "zsh" "rustup"}}
+{{- output "rustup" "completions" "zsh" "cargo"}}
+{{- end}}
+
