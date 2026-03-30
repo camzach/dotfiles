@@ -21,11 +21,10 @@
   "modules-center": [
     "hyprland/workspaces"
   ],
-  "modules-right": [
+    "modules-right": [
     "group/media",
     "group/network",
     "group/hardware",
-    "clock",
-    "custom/notification"
+    "clock"
   ]
 }
