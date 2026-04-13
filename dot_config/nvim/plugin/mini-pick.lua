@@ -1,6 +1,6 @@
 vim.pack.add({
-  gh("echasnovski/mini.pick"),
-  gh("echasnovski/mini.extra"),
+  "https://www.github.com/echasnovski/mini.pick",
+  "https://www.github.com/echasnovski/mini.extra",
 })
 
 local pick = require("mini.pick")

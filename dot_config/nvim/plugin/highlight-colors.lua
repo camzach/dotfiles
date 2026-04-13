@@ -1,5 +1,5 @@
 vim.pack.add({
-  gh("brenoprata10/nvim-highlight-colors"),
+  "https://www.github.com/brenoprata10/nvim-highlight-colors",
 })
 
 require("nvim-highlight-colors").setup({

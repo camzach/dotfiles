@@ -1,5 +1,5 @@
 vim.pack.add({
-  gh("chentoast/marks.nvim"),
+  "https://www.github.com/chentoast/marks.nvim",
 })
 
 require("marks").setup({

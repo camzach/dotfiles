@@ -1,6 +1,6 @@
 vim.pack.add({
-  gh("windwp/nvim-autopairs"),
-  gh("windwp/nvim-ts-autotag"),
+  "https://www.github.com/windwp/nvim-autopairs",
+  "https://www.github.com/windwp/nvim-ts-autotag",
 })
 
 require("nvim-autopairs").setup()

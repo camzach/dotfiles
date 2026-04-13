@@ -9,8 +9,8 @@ local highlight = {
 }
 
 vim.pack.add({
-  gh("hiphish/rainbow-delimiters.nvim"),
-  gh("lukas-reineke/indent-blankline.nvim"),
+  "https://www.github.com/hiphish/rainbow-delimiters.nvim",
+  "https://www.github.com/lukas-reineke/indent-blankline.nvim",
 })
 
 local rainbow_delimiters = require("rainbow-delimiters")

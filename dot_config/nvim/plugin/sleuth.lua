@@ -1,1 +1,1 @@
-vim.pack.add({ gh("tpope/vim-sleuth") })
+vim.pack.add({ "https://www.github.com/tpope/vim-sleuth" })

@@ -5,8 +5,8 @@ local function map(mode, key, query, desc)
 end
 
 vim.pack.add({
-  { src = gh("nvim-treesitter/nvim-treesitter"), build = ":TSUpdate" },
-  gh("nvim-treesitter/nvim-treesitter-textobjects"),
+  { src = "https://www.github.com/nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  "https://www.github.com/nvim-treesitter/nvim-treesitter-textobjects",
 })
 
 vim.g.no_plugin_maps = true

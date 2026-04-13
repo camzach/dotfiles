@@ -26,8 +26,8 @@ local theme = {
 }
 
 vim.pack.add({
-  gh("nvim-lualine/lualine.nvim"),
-  gh("nvim-tree/nvim-web-devicons"),
+  "https://www.github.com/nvim-lualine/lualine.nvim",
+  "https://www.github.com/nvim-tree/nvim-web-devicons",
 })
 
 require("lualine").setup({

@@ -1,6 +1,6 @@
 vim.pack.add({
-  -- gh("kevinhwang91/nvim-ufo"),
-  gh("luukvbaal/statuscol.nvim"),
+  -- "https://www.github.com/kevinhwang91/nvim-ufo",
+  "https://www.github.com/luukvbaal/statuscol.nvim",
 })
 
 vim.o.number = true

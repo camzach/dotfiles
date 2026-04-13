@@ -1,5 +1,5 @@
 vim.pack.add({
-  gh("lewis6991/gitsigns.nvim"),
+  "https://www.github.com/lewis6991/gitsigns.nvim",
 })
 
 local gitsigns = require("gitsigns")

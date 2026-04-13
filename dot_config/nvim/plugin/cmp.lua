@@ -1,10 +1,10 @@
 vim.pack.add({
-  gh("hrsh7th/nvim-cmp"),
-  gh("hrsh7th/cmp-buffer"),
-  gh("hrsh7th/cmp-path"),
-  gh("hrsh7th/cmp-cmdline"),
-  gh("hrsh7th/cmp-nvim-lua"),
-  gh("hrsh7th/cmp-nvim-lsp"),
+  "https://www.github.com/hrsh7th/nvim-cmp",
+  "https://www.github.com/hrsh7th/cmp-buffer",
+  "https://www.github.com/hrsh7th/cmp-path",
+  "https://www.github.com/hrsh7th/cmp-cmdline",
+  "https://www.github.com/hrsh7th/cmp-nvim-lua",
+  "https://www.github.com/hrsh7th/cmp-nvim-lsp",
 })
 
 local cmp = require("cmp")

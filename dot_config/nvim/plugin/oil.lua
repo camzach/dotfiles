@@ -1,6 +1,6 @@
 vim.pack.add({
-  gh("stevearc/oil.nvim"),
-  gh("echasnovski/mini.icons"),
+  "https://www.github.com/stevearc/oil.nvim",
+  "https://www.github.com/echasnovski/mini.icons",
 })
 require("mini.icons").setup()
 require("oil").setup({
