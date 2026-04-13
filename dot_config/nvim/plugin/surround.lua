@@ -1,6 +1,8 @@
-return {
-  "kylechui/nvim-surround",
-  event = "VeryLazy",
+vim.pack.add({
+  gh("kylechui/nvim-surround"),
+})
+
+require("nvim-surround").setup({
   opts = {
     surrounds = {
       t = {
@@ -55,4 +57,4 @@ return {
       },
     },
   },
-}
+})

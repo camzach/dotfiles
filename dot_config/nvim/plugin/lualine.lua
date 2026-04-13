@@ -1,4 +1,4 @@
-local colors = require("config.theme").colors
+local colors = require("theme").colors
 
 local theme = {
   normal = {
@@ -25,13 +25,16 @@ local theme = {
   },
 }
 
-return {
-  "nvim-lualine/lualine.nvim",
+vim.pack.add({
+  gh("nvim-lualine/lualine.nvim"),
+  gh("nvim-tree/nvim-web-devicons"),
+})
+
+require("lualine").setup({
   opts = {
     options = { theme = theme },
     sections = {
       lualine_c = { { "filename", path = 1 } },
     },
   },
-  dependencies = { "nvim-tree/nvim-web-devicons" },
-}
+})
