@@ -170,6 +170,9 @@ config.keys = {
 
 	-- Zoom pane toggle: CTRL+B then z
 	{ key = "z", mods = "LEADER", action = wezterm.action.TogglePaneZoomState },
+
+	-- Edit scrollback buffer in $EDITOR
+	{ key = "e", mods = "LEADER", action = wezterm.action.EmitEvent("trigger-vim-with-scrollback") },
 }
 
 -- Wayland Configuration (Linux only)
@@ -187,5 +190,44 @@ if host_os == "windows" then
 	config.wsl_domains = wsl_domains
 	config.default_domain = "WSL:Ubuntu"
 end
+
+local io = require("io")
+local os = require("os")
+
+wezterm.on("trigger-vim-with-scrollback", function(window, pane)
+	-- Retrieve the text from the pane
+	local text = pane:get_lines_as_text(pane:get_dimensions().scrollback_rows)
+
+	-- Create a temporary file to pass to vim
+	local name = os.tmpname()
+	local f = io.open(name, "w+")
+	-- local editor = os.getenv("VISUAL") or os.getenv("EDITOR")
+	f:write(text)
+	f:flush()
+	f:close()
+
+	-- local editor = os.getenv("VISUAL") or os.getenv("EDITOR")
+
+	-- Open a new window running vim and tell it to open the file
+	window:perform_action(
+		wezterm.action.SpawnCommandInNewTab({
+			args = {
+				os.getenv("SHELL"),
+				"-c",
+				'exec $VISUAL "' .. name .. '"',
+			},
+		}),
+		pane
+	)
+
+	-- Wait "enough" time for vim to read the file before we remove it.
+	-- The window creation and process spawn are asynchronous wrt. running
+	-- this script and are not awaitable, so we just pick a number.
+	--
+	-- Note: We don't strictly need to remove this file, but it is nice
+	-- to avoid cluttering up the temporary directory.
+	wezterm.sleep_ms(1000)
+	os.remove(name)
+end)
 
 return config
