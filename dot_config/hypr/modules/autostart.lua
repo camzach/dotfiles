@@ -1,0 +1,18 @@
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+
+hl.on("hyprland.start", function()
+	hl.exec_cmd("/usr/bin/kdeconnectd")
+	hl.exec_cmd("/usr/bin/waybar")
+	hl.exec_cmd("/usr/bin/1password --silent")
+	hl.exec_cmd("/usr/bin/discord --start-minimized")
+	hl.exec_cmd("/usr/bin/telegram-desktop -startintray")
+	hl.exec_cmd("/usr/bin/steam -silent")
+	hl.exec_cmd("/usr/bin/hypridle")
+	hl.exec_cmd("/usr/bin/hyprpaper")
+
+	hl.exec_cmd('gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"')
+end)
