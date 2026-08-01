@@ -69,7 +69,7 @@
       "src": "https://www.github.com/echasnovski/mini.extra"
     },
     "mini.icons": {
-      "rev": "7fdae2443a0e2910015ca39ad74b50524ee682d3",
+      "rev": "bac6317300e205335df425296570d84322730067",
       "src": "https://www.github.com/echasnovski/mini.icons"
     },
     "mini.pick": {
@@ -89,8 +89,12 @@
       "src": "https://www.github.com/brenoprata10/nvim-highlight-colors"
     },
     "nvim-lspconfig": {
-      "rev": "8a9378a822719346a0288fa004dab302ca3c0a8f",
+      "rev": "4b7fbaa239c5db6b36f424a4521ca9f1a401be33",
       "src": "https://www.github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-scrollbar": {
+      "rev": "f8e87b96cd6362ef8579be456afee3b38fd7e2a8",
+      "src": "https://github.com/petertriho/nvim-scrollbar"
     },
     "nvim-surround": {
       "rev": "9291040de8cd8a4439eb64c441e8d5d2bf884a5a",
@@ -105,7 +109,7 @@
       "src": "https://www.github.com/nvim-treesitter/nvim-treesitter-textobjects"
     },
     "nvim-ts-autotag": {
-      "rev": "8e1c0a389f20bf7f5b0dd0e00306c1247bda2595",
+      "rev": "88c1453db4ba7dd24131086fe51fdf74e587d275",
       "src": "https://www.github.com/windwp/nvim-ts-autotag"
     },
     "nvim-web-devicons": {
@@ -121,7 +125,7 @@
       "src": "https://www.github.com/nvim-lua/plenary.nvim"
     },
     "rainbow-delimiters.nvim": {
-      "rev": "aab6caaffd79b8def22ec4320a5344f7c42f58d2",
+      "rev": "08783ec022e7ddefe0f12a16f1ac4968f55478b0",
       "src": "https://www.github.com/hiphish/rainbow-delimiters.nvim"
     },
     "statuscol.nvim": {
