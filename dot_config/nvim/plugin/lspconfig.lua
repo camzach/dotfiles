@@ -25,6 +25,14 @@ require("mason-lspconfig").setup({
   },
 })
 
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local bufnr = args.buf
+    vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = bufnr })
+    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { buffer = bufnr })
+  end,
+})
+
 vim.lsp.config("bashls", {
   filetypes = { "sh", "bash", "zsh" },
 })
