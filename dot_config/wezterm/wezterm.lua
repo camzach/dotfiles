@@ -53,7 +53,7 @@ config.initial_rows = 45
 config.initial_cols = 180
 config.window_decorations = "TITLE | RESIZE"
 config.window_background_image = get_background_image()
-config.window_close_confirmation = "NeverPrompt"
+config.window_close_confirmation = "AlwaysPrompt"
 config.win32_system_backdrop = "Acrylic"
 config.adjust_window_size_when_changing_font_size = false
 
