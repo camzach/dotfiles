@@ -15,6 +15,7 @@ require("mason-lspconfig").setup({
     "hls",
     "jsonls",
     "lua_ls",
+    "oxlint",
     "pyright",
     "rust_analyzer",
     "stylelint_lsp",
