@@ -24,6 +24,7 @@
     "modules-right": [
     "group/media",
     "group/network",
+    "custom/headset",
     "group/hardware",
     "clock"
   ]

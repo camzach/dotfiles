@@ -89,3 +89,18 @@ window#waybar.empty #window {
 #network {
   transition: 300ms;
 }
+
+#headset {
+  background-color: @surface;
+  border-radius: 999px;
+  box-shadow: 0px 0px 8px 4px @shadow inset;
+  padding: 0 8px;
+}
+
+#headset.low {
+  color: orange;
+}
+
+#headset.critical {
+  color: red;
+}

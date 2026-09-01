@@ -1,4 +1,11 @@
 {
+  "custom/headset": {
+    "exec": "~/.config/waybar/scripts/headset-battery.sh",
+    "return-type": "json",
+    "interval": 30,
+    "format": "{}",
+    "tooltip": true
+  },
   "cpu": {
     "format": " {usage}%",
     "on-click": "wezterm -e btop"
